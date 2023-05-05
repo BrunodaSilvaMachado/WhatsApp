@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WhatsApp</string>
+    <string name="prompt_password">Senha</string>
+    <string name="informe">"Esse não é seu nome de usuário e nem a sua senha. Esse nome ficará visivel para os seus contatos
+        do WhatsApp."
+    </string>
+    <string name="user_icon">Icone do usuário</string>
+    <string name="chat">Conversas</string>
+    <string name="contacts">Contatos</string>
+    <string name="quit">Sair</string>
+    <string name="settings">Configurações</string>
+    <string name="search">Pesquisar</string>
+    <string name="invalid_credentials">Nome de usuário ou senha invalidos</string>
+    <string name="invalid_email">Um email valido é requerido</string>
+    <string name="action_sign_up">Cadastrar</string>
+    <string name="username">Nome de usuário</string>
+    <string name="new_user">Novo usuário?</string>
+    <string name="login_failed">Falha ao entrar</string>
+    <string name="invalid_password">A senha deve ter no mímino 5 caracteres</string>
+    <string name="invalid_username">Não é um nome valido</string>
+    <string name="welcome">Bem Vindo!</string>
+    <string name="action_sign_in_short">Entrar</string>
+    <string name="action_sign_in">Entar</string>
+    <string name="permission_denied">Permissões Negadas</string>
+    <string name="msg_request_permission">Para utilizar a aplicação é necessário aceitar as permissões.</string>
+    <string name="accept">Confirmar</string>
+    <string name="camera">Câmera</string>
+    <string name="gallery">Galeria</string>
+    <string name="value">valor</string>
+    <string name="title">Title</string>
+    <string name="upload_failed">Falha ao carregar imagem</string>
+    <string name="message">Mensagem</string>
+    <string name="next">Próximo</string>
+    <string name="previous">Anterior</string>
+    <string name="send">Enviar</string>
+    <string name="delete_failed">Falha ao Excluir</string>
+    <string name="new_group">Novo Grupo</string>
+    <string name="of">de</string>
+    <string name="selected">selecionados</string>
+    <string name="notification">Notificação</string>
+    <string name="set_name_image">Defina um nome e uma imagem opcional.</string>
+    <string name="group_name">Nome do grupo</string>
+    <string name="participants">Participantes:</string>
+    <string name="finish">Finalizar</string>
+    <string name="set_name">Defina um nome</string>
+    <string name="image_post">Postar imagem</string>
+    <string name="msg_image">imagem</string>
+    <string name="no_members">Selecione pelo menos um contato.</string>
+    <string name="confirm_deletion">Tem certeza que deseja excluir a mensagem?</string>
+    <string name="delete">Excluir</string>
+    <string name="msg_delete">Esta mensagem foi apagada.</string>
+</resources>

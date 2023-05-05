@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">WhatsApp</string>
+    <string name="title_activity_login" translatable="false">LoginActivity</string>
+    <string name="prompt_email" translatable="false">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="new_user">New user?</string>
+    <string name="username">User name</string>
+    <string name="action_sign_up">Sign Up</string>
+    <string name="invalid_email">valid email is request</string>
+    <string name="invalid_credentials">Username or password is invalid</string>
+    <string name="search">Search</string>
+    <string name="settings">Settings</string>
+    <string name="quit">Quit</string>
+    <string name="chat">Chat</string>
+    <string name="contacts">Contacts</string>
+    <string name="user_icon">User icon</string>
+    <string name="informe">This is not your username or password. This name will be visible to your WhatsApp contacts.
+    </string>
+    <string name="permission_denied">Permissions denied</string>
+    <string name="msg_request_permission">To use the app it is necessary to accept the permissions.</string>
+    <string name="accept">Accept</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="upload_failed">Upload Failed</string>
+    <string name="delete_failed">Failed to delete file</string>
+    <string name="message">Message</string>
+    <string name="value">valor</string>
+    <string name="title">Title</string>
+    <string name="title_activity_chat" translatable="false">ChatActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="send">Send</string>
+    <string name="new_group">New Group</string>
+    <string name="of">of</string>
+    <string name="selected">selelcted</string>
+    <string name="notification">Notification</string>
+    <string name="group_name">Group name</string>
+    <string name="set_name_image">Set a name and optional image.</string>
+    <string name="participants">Participants:</string>
+    <string name="finish">Finalize</string>
+    <string name="set_name">Set a name</string>
+    <string name="image_post">Image post</string>
+    <string name="msg_image">image</string>
+    <string name="no_members">Select at least one contact.</string>
+    <string name="delete">Delete</string>
+    <string name="confirm_deletion">Are you sure you want to delete the message?</string>
+    <string name="msg_delete">This message has been deleted.</string>
+</resources>

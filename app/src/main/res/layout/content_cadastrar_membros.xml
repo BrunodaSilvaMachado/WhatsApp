@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context=".fragment.CadastrarMembrosGrupoFragment">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:padding="10dp" android:background="@color/white">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:padding="8dp">
+            <de.hdodenhof.circleimageview.CircleImageView android:layout_width="60dp" android:layout_height="60dp"
+                                                          android:src="@drawable/padrao"
+                                                          android:id="@+id/iv_img_grupo"
+            />
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/et_nome_grupo" android:layout_weight="1" android:hint="@string/group_name"
+                    android:autofillHints="name" android:minHeight="48dp" android:textColorHint="#757575"/>
+
+        </LinearLayout>
+        <TextView
+                android:text="@string/set_name_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView"/>
+    </LinearLayout>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:padding="10dp">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:orientation="horizontal">
+            <TextView
+                    android:text="@string/participants"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/tv_participantes" android:textStyle="bold"
+                    android:textSize="18sp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:id="@+id/num_participants" android:textStyle="bold" android:paddingStart="4dp"
+                      android:paddingEnd="4dp"/>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" android:id="@+id/rv_membros_grupo"/>
+    </LinearLayout>
+</LinearLayout>

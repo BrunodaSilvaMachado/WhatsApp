@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" android:orientation="vertical"
+        android:background="@drawable/bg_chat" android:paddingEnd="6dp" android:paddingStart="6dp">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1" android:id="@+id/recycler_mensagens"
+            android:scrollbars="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:stackFromEnd="true"
+            app:reverseLayout="false"
+    />
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginEnd="6dp" android:layout_marginStart="6dp"
+            android:layout_marginBottom="10dp" android:elevation="2dp" android:paddingBottom="6dp"
+            android:gravity="center_vertical" android:layout_gravity="center_vertical">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                      android:orientation="vertical" android:layout_weight="1"
+                      android:background="@drawable/bg_msg_chat">
+           <include layout="@layout/adapter_mensagem_quote"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"  android:layout_gravity="center_vertical"
+                android:gravity="center_vertical" android:layout_marginEnd="6dp" android:paddingStart="16dp"
+                android:paddingEnd="16dp" android:layout_marginBottom="3dp" android:layout_marginTop="3dp">
+            <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:hint="@string/message"
+                    android:ems="10"
+                    android:id="@+id/et_msg" android:autofillHints="message" android:minHeight="48dp"
+                    android:textColorHint="#757575" android:layout_weight="1"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_baseline_insert_photo_24"
+                    android:id="@+id/iv_gallery" android:layout_marginStart="4dp" android:layout_marginEnd="4dp"
+                    android:contentDescription="@string/gallery"/>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" app:srcCompat="@drawable/ic_baseline_photo_camera_24"
+                    android:id="@+id/iv_camera" android:contentDescription="@string/camera"
+                    android:layout_marginStart="4dp" android:layout_marginEnd="4dp"/>
+           </LinearLayout>
+        </LinearLayout>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true" android:src="@drawable/ic_baseline_send_24"
+                android:id="@+id/fab_enviar"
+                android:contentDescription="@string/send"
+                app:fabSize="mini" android:focusable="true"
+                app:backgroundTint="@color/colorPrimary"/>
+    </LinearLayout>
+</LinearLayout>

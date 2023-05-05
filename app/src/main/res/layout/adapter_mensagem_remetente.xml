@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_alignParentEnd="true"
+                  android:orientation="vertical"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/bg_balao"
+                  android:backgroundTint="@color/balaoRemetente" android:layout_margin="6dp">
+
+        <TextView
+                android:text="@string/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tv_msg_titulo" android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        <include layout="@layout/adapter_mensagem_quote"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" app:srcCompat="@drawable/padrao" android:id="@+id/iv_msg_foto"
+                android:contentDescription="@string/image_post"/>
+        <TextView
+                android:text="@string/message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/tv_msg_texto" android:textSize="18sp"
+                android:textColor="@color/black"/>
+    </LinearLayout>
+</RelativeLayout>

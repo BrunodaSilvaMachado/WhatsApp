@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_grupo"
+            app:startDestination="@id/selecionarMembrosGrupoFragment">
+
+    <fragment android:id="@+id/selecionarMembrosGrupoFragment"
+              android:name="com.cursoandroid.whatsapp.fragment.SelecionarMembrosGrupoFragment"
+              android:label="@string/new_group"
+              tools:layout="@layout/fragment_selecionar_membros_grupo">
+        <action android:id="@+id/action_selecionarMembrosGrupoFragment_to_cadastrarMembrosGrupoFragment"
+                app:destination="@id/cadastrarMembrosGrupoFragment"/>
+    </fragment>
+    <fragment android:id="@+id/cadastrarMembrosGrupoFragment"
+              android:name="com.cursoandroid.whatsapp.fragment.CadastrarMembrosGrupoFragment"
+              android:label="@string/new_group" tools:layout="@layout/fragment_cadastrar_membros_grupo">
+        <action android:id="@+id/action_cadastrarMembrosGrupoFragment_to_selecionarMembrosGrupoFragment"
+                app:destination="@id/selecionarMembrosGrupoFragment"/>
+    </fragment>
+</navigation>
